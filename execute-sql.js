@@ -4,10 +4,10 @@ const fs = require('fs');
 
 // Configuração da conexão com o PostgreSQL
 const pool = new Pool({
-  user: 'postegres',
-  host: 'dpg-d0ru73u3jp1c73e4la50-a.oregon-postgres.render.com',
+  user: 'atividadexpress_user',
+  host: 'dpg-d11h44ndiees73fch4vg-a.oregon-postgres.render.com',
   database: 'atividadexpreess',
-  password: '123456',
+  password: 'CeXEKRtr81qju4l6gEeIMBo278mbk1D1',
   port: 5432,
   ssl: {
     rejectUnauthorized: false
