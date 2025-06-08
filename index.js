@@ -20,6 +20,7 @@ const pool = new Pool({
   }
 });
 
+
 // Middleware
 app.use(cors({
   origin: '*',
@@ -48,6 +49,19 @@ app.get('/', (req, res) => {
     }
   });
 });
+
+// Rota de teste de conexão com o banco
+app.get('/test-db', async (req, res) => {
+  try {
+    const result = await pool.query('SELECT NOW()');
+    res.json({ dbTime: result.rows[0].now });
+  } catch (err) {
+    console.error('Erro de conexão com o banco:', err);
+    res.status(500).json({ error: 'Erro ao conectar com o banco de dados.' });
+  }
+});
+
+
 
 // Endpoints para Pessoas
 app.get('/pessoas', async (req, res) => {
