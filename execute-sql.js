@@ -6,7 +6,7 @@ const fs = require('fs');
 const pool = new Pool({
   user: 'atividadexpress_user',
   host: 'dpg-d11h44ndiees73fch4vg-a.oregon-postgres.render.com',
-  database: 'atividadexpreess',
+  database: 'atividadexpress',
   password: 'CeXEKRtr81qju4l6gEeIMBo278mbk1D1',
   port: 5432,
   ssl: {
