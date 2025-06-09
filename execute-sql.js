@@ -2,12 +2,13 @@
 const { Pool } = require('pg');
 const fs = require('fs');
 
+
 // Configuração da conexão com o PostgreSQL
 const pool = new Pool({
-  user: 'atividadexpress_user',
-  host: 'dpg-d11h44ndiees73fch4vg-a.oregon-postgres.render.com',
-  database: 'atividadexpress',
-  password: 'CeXEKRtr81qju4l6gEeIMBo278mbk1D1',
+  user: 'database_7y85_user',
+  host: 'dpg-d13jqji4d50c739h7770-a.oregon-postgres.render.com',
+  database: 'database_7y85',
+  password: 'ZBJ5fq8rge8kYCg1kZiUCCYJdU1JJaPz',
   port: 5432,
   ssl: {
     rejectUnauthorized: false
